@@ -628,13 +628,17 @@
     }
 
     .player-frame {
-      margin-top: 2px;
-      border-radius: 18px;
-      border: 1px solid rgba(30,64,175,0.6);
-      overflow: hidden;
-      background: #020617;
-      min-height: min(70vh, 520px);
-    }
+  margin-top: 2px;
+  border-radius: 18px;
+  border: 1px solid rgba(30,64,175,0.6);
+  background: #020617;
+
+  /* 🔥 key changes */
+  height: 85vh;        /* player fills most of the screen */
+  max-height: 900px;   /* big cap so it’s not tiny */
+  overflow: auto;      /* if the game is taller, you can scroll */
+}
+
 
     .player-frame iframe {
       width: 100%;
