@@ -806,6 +806,21 @@
   --text: #d6f5d6;
   --text-soft: #a4c9a4;
 }
+.panic-btn {
+  background: #ef4444;
+  border: 1px solid #f87171;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.panic-btn:hover {
+  background: #dc2626;
+  border-color: #fca5a5;
+}
 
   </style>
 </head>
@@ -841,6 +856,8 @@
   <option value="matrix">Matrix</option>
   <option value="minecraft">Minecraft</option>
 </select>
+<!-- Panic Button -->
+<button class="btn panic-btn" onclick="panicHide()">🚨 Panic</button>
 
     </header>
 
@@ -1221,6 +1238,9 @@ themeSelector.addEventListener("change", () => {
   document.documentElement.setAttribute("data-theme", newTheme);
   localStorage.setItem("site-theme", newTheme);
 });
+function panicHide() {
+  window.location.href = "https://clever.com/in/dallasisd/student/portal";
+}
 
     // 🔹 6. Init
     document.addEventListener("DOMContentLoaded", () => {
