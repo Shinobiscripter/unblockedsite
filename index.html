@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <title>NEBULAHUB</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-886SN3349C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-886SN3349C');
-</script>  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-886SN3349C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-886SN3349C');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8989843364629092" crossorigin="anonymous"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     :root {
       --bg: #030014;
@@ -643,11 +648,10 @@
       overflow: hidden;
       background: #020617;
 
-      /* 🔥 make the game area taller */
+      /* taller game area */
       height: 80vh;
       max-height: 800px;
-}
-
+    }
 
     .player-frame iframe {
       width: 100%;
@@ -743,232 +747,244 @@
       box-shadow: none;
       border-color: #9ca3af;
     }
-    <footer class="legal-footer">
-  <span>© <span id="yearSpan"></span> NebulaHub</span>
-  <a href="/about.html">About</a>
-  <a href="/privacy.html">Privacy Policy</a>
-  <a href="/terms.html">Terms of Use</a>
-</footer>
 
     /* ===========================
-   THEME OVERRIDES
-   =========================== */
+       THEME OVERRIDES
+       =========================== */
 
-/* Default: Nebula */
-:root[data-theme="nebula"] {
-  --bg: #050816;
-  --bg-elevated: #0b1020;
-  --bg-soft: #11182a;
-  --accent: #4f46e5;
-  --accent-soft: rgba(79, 70, 229, 0.25);
-  --accent-strong: #22c55e;
-  --text: #e5e7eb;
-  --text-soft: #9ca3af;
-}
+    /* Default: Nebula */
+    :root[data-theme="nebula"] {
+      --bg: #050816;
+      --bg-elevated: #0b1020;
+      --bg-soft: #11182a;
+      --accent: #4f46e5;
+      --accent-soft: rgba(79, 70, 229, 0.25);
+      --accent-strong: #22c55e;
+      --text: #e5e7eb;
+      --text-soft: #9ca3af;
+    }
 
-/* Midnight Dark */
-:root[data-theme="midnight"] {
-  --bg: #010409;
-  --bg-elevated: #0d1117;
-  --bg-soft: #161b22;
-  --accent: #58a6ff;
-  --accent-soft: rgba(88,166,255,0.23);
-  --accent-strong: #238636;
-  --text: #c9d1d9;
-  --text-soft: #8b949e;
-}
+    /* Midnight Dark */
+    :root[data-theme="midnight"] {
+      --bg: #010409;
+      --bg-elevated: #0d1117;
+      --bg-soft: #161b22;
+      --accent: #58a6ff;
+      --accent-soft: rgba(88,166,255,0.23);
+      --accent-strong: #238636;
+      --text: #c9d1d9;
+      --text-soft: #8b949e;
+    }
 
-/* Bubblegum */
-:root[data-theme="bubblegum"] {
-  --bg: #ffe4f1;
-  --bg-elevated: #ffd6ec;
-  --bg-soft: #ffcae6;
-  --accent: #ff4fa3;
-  --accent-soft: rgba(255, 79, 163, 0.23);
-  --accent-strong: #ff1e80;
-  --text: #3a0035;
-  --text-soft: #5f1a50;
-}
+    /* Bubblegum */
+    :root[data-theme="bubblegum"] {
+      --bg: #ffe4f1;
+      --bg-elevated: #ffd6ec;
+      --bg-soft: #ffcae6;
+      --accent: #ff4fa3;
+      --accent-soft: rgba(255, 79, 163, 0.23);
+      --accent-strong: #ff1e80;
+      --text: #3a0035;
+      --text-soft: #5f1a50;
+    }
 
-/* MATRIX */
-:root[data-theme="matrix"] {
-  --bg: #000000;
-  --bg-elevated: #020402;
-  --bg-soft: #001100;
-  --accent: #00ff41;
-  --accent-soft: rgba(0,255,65,0.15);
-  --accent-strong: #00ff41;
-  --text: #d9ffd9;
-  --text-soft: #71ff8e;
-}
+    /* MATRIX */
+    :root[data-theme="matrix"] {
+      --bg: #000000;
+      --bg-elevated: #020402;
+      --bg-soft: #001100;
+      --accent: #00ff41;
+      --accent-soft: rgba(0,255,65,0.15);
+      --accent-strong: #00ff41;
+      --text: #d9ffd9;
+      --text-soft: #71ff8e;
+    }
 
-/* ⭐ MINECRAFT THEME ⭐ */
-:root[data-theme="minecraft"] {
-  --bg: #0b2e0b;
-  --bg-elevated: #0f3d0f;
-  --bg-soft: #145214;
-  --accent: #3c8527;      /* grass top */
-  --accent-soft: rgba(60,133,39,0.25);
-  --accent-strong: #8b5a2b; /* dirt block */
-  --text: #d6f5d6;
-  --text-soft: #a4c9a4;
-}
-.panic-btn {
-  background: #ef4444;
-  border: 1px solid #f87171;
-  color: white;
-  font-weight: 600;
-  border-radius: 12px;
-  padding: 6px 12px;
-  cursor: pointer;
-  transition: 0.15s ease;
-}
+    /* ⭐ MINECRAFT THEME ⭐ */
+    :root[data-theme="minecraft"] {
+      --bg: #0b2e0b;
+      --bg-elevated: #0f3d0f;
+      --bg-soft: #145214;
+      --accent: #3c8527;      /* grass top */
+      --accent-soft: rgba(60,133,39,0.25);
+      --accent-strong: #8b5a2b; /* dirt block */
+      --text: #d6f5d6;
+      --text-soft: #a4c9a4;
+    }
 
-.panic-btn:hover {
-  background: #dc2626;
-  border-color: #fca5a5;
-}
-/* NebulaChat layout */
-.chat-section {
-  margin-top: 18px;
-  background: radial-gradient(circle at top left, rgba(79,70,229,0.22), transparent 55%), var(--bg-elevated);
-  border-radius: 22px;
-  border: 1px solid rgba(148,163,184,0.35);
-  padding: 14px 16px 16px;
-  box-shadow: var(--shadow-soft);
-}
+    /* Panic button */
+    .panic-btn {
+      background: #ef4444;
+      border: 1px solid #f87171;
+      color: white;
+      font-weight: 600;
+      border-radius: 12px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: 0.15s ease;
+    }
 
-.chat-header-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
+    .panic-btn:hover {
+      background: #dc2626;
+      border-color: #fca5a5;
+    }
 
-.chat-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
+    /* NebulaChat layout */
+    .chat-section {
+      margin-top: 18px;
+      background: radial-gradient(circle at top left, rgba(79,70,229,0.22), transparent 55%), var(--bg-elevated);
+      border-radius: 22px;
+      border: 1px solid rgba(148,163,184,0.35);
+      padding: 14px 16px 16px;
+      box-shadow: var(--shadow-soft);
+    }
 
-.chat-subtitle {
-  font-size: 0.8rem;
-  color: var(--text-soft);
-}
+    .chat-header-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
 
-.chat-pill {
-  padding: 4px 9px;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  border: 1px solid rgba(129,140,248,0.8);
-  background: rgba(15,23,42,0.9);
-  color: #c7d2fe;
-}
+    .chat-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
 
-.chat-layout {
-  display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 12px;
-}
+    .chat-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
 
-@media (max-width: 900px) {
-  .chat-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
+    .chat-pill {
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border: 1px solid rgba(129,140,248,0.8);
+      background: rgba(15,23,42,0.9);
+      color: #c7d2fe;
+    }
 
-.chat-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+    .chat-layout {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 12px;
+    }
 
-.chat-column-wide {
-  min-height: 260px;
-}
+    @media (max-width: 900px) {
+      .chat-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
 
-.chat-card {
-  background: var(--bg-soft);
-  border-radius: 16px;
-  border: 1px solid rgba(148,163,184,0.35);
-  padding: 10px 11px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
+    .chat-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-.chat-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    .chat-column-wide {
+      min-height: 260px;
+    }
 
-.chat-card-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-}
+    .chat-card {
+      background: var(--bg-soft);
+      border-radius: 16px;
+      border: 1px solid rgba(148,163,184,0.35);
+      padding: 10px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
 
-.chat-card-text {
-  font-size: 0.8rem;
-  color: var(--text-soft);
-}
+    .chat-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.chat-input {
-  background: rgba(15,23,42,0.95);
-  border-radius: 10px;
-  border: 1px solid rgba(148,163,184,0.5);
-  color: var(--text);
-  font-size: 0.85rem;
-  padding: 6px 8px;
-  outline: none;
-  width: 100%;
-}
+    .chat-card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
 
-.chat-input::placeholder {
-  color: #6b7280;
-}
+    .chat-card-text {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
 
-.chat-input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px rgba(79,70,229,0.6);
-}
+    .chat-input {
+      background: rgba(15,23,42,0.95);
+      border-radius: 10px;
+      border: 1px solid rgba(148,163,184,0.5);
+      color: var(--text);
+      font-size: 0.85rem;
+      padding: 6px 8px;
+      outline: none;
+      width: 100%;
+    }
 
-.chat-btn-row {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-top: 6px;
-}
+    .chat-input::placeholder {
+      color: #6b7280;
+    }
 
-.chat-messages-box {
-  height: 170px;
-  overflow-y: auto;
-  border-radius: 10px;
-  border: 1px solid rgba(30,64,175,0.7);
-  background: rgba(15,23,42,0.98);
-  padding: 6px 8px;
-  font-size: 0.8rem;
-}
+    .chat-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(79,70,229,0.6);
+    }
 
-.chat-input-row {
-  display: flex;
-  gap: 6px;
-  margin-top: 6px;
-}
+    .chat-btn-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
 
-.flex-1 {
-  flex: 1;
-}
+    .chat-messages-box {
+      height: 170px;
+      overflow-y: auto;
+      border-radius: 10px;
+      border: 1px solid rgba(30,64,175,0.7);
+      background: rgba(15,23,42,0.98);
+      padding: 6px 8px;
+      font-size: 0.8rem;
+    }
 
+    .chat-input-row {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .flex-1 {
+      flex: 1;
+    }
+
+    /* Legal footer */
+    .legal-footer {
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .legal-footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    .legal-footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
-  <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8989843364629092"
-    crossorigin="anonymous"></script>
-
 <body>
   <div class="app-shell">
     <!-- Top bar -->
@@ -989,21 +1005,22 @@
           </div>
         </div>
       </div>
-      <div class="pill">
-        <span class="pill-dot"></span>
-        LIVE LIBRARY
+      <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          LIVE LIBRARY
+        </div>
+        <!-- Theme Selector -->
+        <select id="themeSelector" class="theme-selector" style="padding:6px 10px; border-radius: 12px; background: var(--bg-soft); border:1px solid var(--accent-soft); color:var(--text);">
+          <option value="nebula">Nebula</option>
+          <option value="midnight">Midnight</option>
+          <option value="bubblegum">Bubblegum</option>
+          <option value="matrix">Matrix</option>
+          <option value="minecraft">Minecraft</option>
+        </select>
+        <!-- Panic Button -->
+        <button class="btn panic-btn" onclick="panicHide()">🚨 Panic</button>
       </div>
-      <!-- Theme Selector -->
-<select id="themeSelector" class="theme-selector" style="padding:6px 10px; border-radius: 12px; background: var(--bg-soft); border:1px solid var(--accent-soft); color:var(--text);">
-  <option value="nebula">Nebula</option>
-  <option value="midnight">Midnight</option>
-  <option value="bubblegum">Bubblegum</option>
-  <option value="matrix">Matrix</option>
-  <option value="minecraft">Minecraft</option>
-</select>
-<!-- Panic Button -->
-<button class="btn panic-btn" onclick="panicHide()">🚨 Panic</button>
-
     </header>
 
     <!-- Search + filters -->
@@ -1041,12 +1058,12 @@
           <span class="dot"></span>
           Sandbox
         </button>
+        <button class="filter-chip" data-category="movies">
+          <span class="dot"></span>
+          Movies
+        </button>
       </div>
     </section>
-  <button class="filter-chip" data-category="movies">
-    <span class="dot"></span>
-    Movies
-  </button>
 
     <!-- Main content -->
     <main class="content">
@@ -1094,6 +1111,7 @@
             </p>
           </div>
         </div>
+      </aside>
 
       <!-- Library / Player -->
       <section class="library">
@@ -1141,6 +1159,7 @@
         </div>
       </section>
     </main>
+
     <!-- NebulaChat: separate social / chat section -->
     <section id="nebulaChat" class="chat-section">
       <div class="chat-header-row">
@@ -1287,26 +1306,15 @@
         Host this on <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>.
         <span class="portal-link" id="portalLink">Portal mode</span>
       </span>
-      
     </footer>
-    .legal-footer {
-  margin-top: 10px;
-  font-size: 0.75rem;
-  color: #9ca3af;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
-.legal-footer a {
-  color: #93c5fd;
-  text-decoration: none;
-}
-.legal-footer a:hover {
-  text-decoration: underline;
-}
-  </div>
 
+    <div class="legal-footer">
+      <span>© <span id="yearSpan"></span> NebulaHub</span>
+      <a href="/about.html">About</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+    </div>
+  </div>
 
   <script>
     // 🔹 1. Game data – put your real URLs here
@@ -1319,58 +1327,54 @@
         url: "games/Geometry Dash Lite/Geometry Dash Lite.html"
       },
       {
-  id: "buckshot-roulette",
-  name: "Buckshot Roulette",
-  category: "horror",
-  tags: ["casino", "guns", "psych-horror"],
-  url: "games/Buckshot Roulette/Buckshot Roulette.html"
-},
-
+        id: "buckshot-roulette",
+        name: "Buckshot Roulette",
+        category: "horror",
+        tags: ["casino", "guns", "psych-horror"],
+        url: "games/Buckshot Roulette/Buckshot Roulette.html"
+      },
       {
-  id: "basketball-random",
-  name: "Basketball Random",
-  category: "arcade",
-  tags: ["sports", "2-player", "random"],
-  url: "games/Basketball Random/Basket Random.html"
-},
-
+        id: "basketball-random",
+        name: "Basketball Random",
+        category: "arcade",
+        tags: ["sports", "2-player", "random"],
+        url: "games/Basketball Random/Basket Random.html"
+      },
       {
-  id: "hollow-knight",
-  name: "Hollow Knight Web",
-  category: "adventure",
-  tags: ["metroidvania", "platformer", "indie"],
-  url: "games/Hollow Knight/Hollow Knight.html"
-},
+        id: "hollow-knight",
+        name: "Hollow Knight Web",
+        category: "adventure",
+        tags: ["metroidvania", "platformer", "indie"],
+        url: "games/Hollow Knight/Hollow Knight.html"
+      },
       {
-  id: "ultrakill",
-  name: "ULTRAKILL Web",
-  category: "fps",
-  tags: ["movement", "retro", "violence"],
-  url: "games/Ultrakill/ULTRAKILL.html"
-},
+        id: "ultrakill",
+        name: "ULTRAKILL Web",
+        category: "fps",
+        tags: ["movement", "retro", "violence"],
+        url: "games/Ultrakill/ULTRAKILL.html"
+      },
       {
-  id: "half-life",
-  name: "Half-Life Web",
-  category: "fps",
-  tags: ["shooter", "valve", "classic"],
-  url: "games/Half-Life/Half Life.html"
-},
+        id: "half-life",
+        name: "Half-Life Web",
+        category: "fps",
+        tags: ["shooter", "valve", "classic"],
+        url: "games/Half-Life/Half Life.html"
+      },
       {
-  id: "fnaf",
-  name: "Five Nights at Freddy's",
-  category: "horror",
-  tags: ["fnaf", "jumpscare", "survival"],
-  url: "games/FNAF/Five Nights at Freddy's"
-},
-
-{
-  id: "movie-hub",
-  name: "Movie Library",
-  category: "movies",
-  tags: ["jellyfin", "movies", "stream"],
-  url: "https://hydrahd.io/"
-},
-
+        id: "fnaf",
+        name: "Five Nights at Freddy's",
+        category: "horror",
+        tags: ["fnaf", "jumpscare", "survival"],
+        url: "games/FNAF/Five Nights at Freddy's"
+      },
+      {
+        id: "movie-hub",
+        name: "Movie Library",
+        category: "movies",
+        tags: ["jellyfin", "movies", "stream"],
+        url: "https://hydrahd.io/"
+      },
     ];
 
     // 🔹 2. Get elements
@@ -1392,6 +1396,7 @@
     const backToLibraryBtn = document.getElementById("backToLibraryBtn");
     const openInNewTabBtn = document.getElementById("openInNewTabBtn");
     const portalLink = document.getElementById("portalLink");
+    const yearSpan = document.getElementById("yearSpan");
 
     // 🔹 3. State
     let activeCategory = "all";
@@ -1522,26 +1527,25 @@
       }
       location.reload();
     });
-/* ===========================
-   THEME SWITCHER JS
-   =========================== */
 
-const themeSelector = document.getElementById("themeSelector");
+    /* THEME SWITCHER JS */
+    const themeSelector = document.getElementById("themeSelector");
 
-// Load saved theme
-const savedTheme = localStorage.getItem("site-theme") || "nebula";
-document.documentElement.setAttribute("data-theme", savedTheme);
-themeSelector.value = savedTheme;
+    // Load saved theme
+    const savedTheme = localStorage.getItem("site-theme") || "nebula";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    themeSelector.value = savedTheme;
 
-// Change theme
-themeSelector.addEventListener("change", () => {
-  const newTheme = themeSelector.value;
-  document.documentElement.setAttribute("data-theme", newTheme);
-  localStorage.setItem("site-theme", newTheme);
-});
-function panicHide() {
-  window.location.href = "https://clever.com/in/dallasisd/student/portal";
-}
+    // Change theme
+    themeSelector.addEventListener("change", () => {
+      const newTheme = themeSelector.value;
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("site-theme", newTheme);
+    });
+
+    function panicHide() {
+      window.location.href = "https://clever.com/in/dallasisd/student/portal";
+    }
 
     // 🔹 6. Init
     document.addEventListener("DOMContentLoaded", () => {
@@ -1549,9 +1553,14 @@ function panicHide() {
       if (location.hash === "#portal") {
         document.body.classList.add("portal-mode");
       }
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
       renderGrid();
     });
   </script>
+
+  <!-- Supabase chat logic -->
   <script type="module" src="supabase-chat.js"></script>
 </body>
 </html>
