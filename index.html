@@ -990,6 +990,21 @@
 </div>
 
 <div>
+  <div class="sidebar-title">Group Chat</div>
+  <div class="sidebar-card">
+    <div id="currentGroupName" class="sidebar-card-title">No group selected</div>
+
+    <div id="groupChatMessages"
+         style="height:150px;overflow-y:auto;border-radius:8px;border:1px solid rgba(148,163,184,0.4);padding:6px;margin-top:6px;">
+    </div>
+
+    <input id="groupChatInput" placeholder="Message..." style="width:100%;margin-top:8px;padding:6px;">
+    <button class="btn" id="groupChatSendBtn" style="margin-top:6px;">Send</button>
+  </div>
+</div>
+
+        
+<div>
   <div class="sidebar-title">Global chat</div>
   <div class="sidebar-card" id="chatPanel">
     <div id="chatMessages"
@@ -1006,6 +1021,16 @@
     <p class="sidebar-card-text" id="chatHint" style="margin-top:4px;font-size:0.72rem;">
       You must be signed in to chat.
     </p>
+  </div>
+</div>
+        
+<div>
+  <div class="sidebar-title">Private Groups</div>
+  <div class="sidebar-card">
+    <div id="groupList" class="hint-list" style="max-height:140px;overflow-y:auto;"></div>
+
+    <input id="newGroupName" placeholder="Group name" style="margin-top:8px;width:100%;padding:6px;">
+    <button class="btn" id="createGroupBtn" style="margin-top:6px;">Create group</button>
   </div>
 </div>
 
